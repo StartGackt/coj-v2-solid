@@ -1,4 +1,5 @@
-from pydantic import BaseSettings, PostgresDsn, Field
+from pydantic_settings import BaseSettings
+from pydantic import PostgresDsn, Field
 from typing import Optional
 
 
