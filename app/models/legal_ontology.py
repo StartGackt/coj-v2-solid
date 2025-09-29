@@ -1,11 +1,18 @@
-# legal_ontology.py
-
-from typing import List, Optional, Dict, Any, Union
-from pydantic import BaseModel, Field
-from enum import Enum
-from datetime import datetime
+from sqlalchemy import Column, Integer, String, Text
+from sqlalchemy.ext.declarative import declarative_base
 
 
+Base = declarative_base()
+
+# For Alembic migrations
+from sqlalchemy.orm import DeclarativeMeta
+
+metadata = Base.metadata
 
 
+class LegalOntology(Base):
+    __tablename__ = "legal_ontology"
 
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(255), nullable=False, unique=True)
+    description = Column(Text, nullable=True)

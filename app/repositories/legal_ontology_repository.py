@@ -1,3 +1,4 @@
+# Placeholder for additional repository logic if needed in the future.
 from app.models.legal_ontology import LegalOntology
 from typing import List
 

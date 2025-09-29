@@ -1,3 +1,4 @@
+# Placeholder for additional API logic if needed in the future.
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.schemas.legal_ontology import LegalOntologyCreate, LegalOntologyRead

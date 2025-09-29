@@ -1,3 +1,4 @@
+# Placeholder for knowledge graph/graph DB logic if needed in the future.
 """
 Knowledge Graph Service for Legal Entities
 Manages Neo4j graph database for legal knowledge representation
@@ -9,4 +10,3 @@ from neo4j import GraphDatabase, Driver
 from neo4j.exceptions import ServiceUnavailable, AuthError
 import json
 from datetime import datetime
-

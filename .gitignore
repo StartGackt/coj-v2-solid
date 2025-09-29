@@ -1,1 +1,4 @@
+# Directory for log files
+logs/
 venv/
+env/

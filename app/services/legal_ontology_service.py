@@ -1,3 +1,4 @@
+# Placeholder for additional service logic if needed in the future.
 from app.repositories.legal_ontology_repository import LegalOntologyRepository
 from app.schemas.legal_ontology import LegalOntologyCreate
 from typing import List

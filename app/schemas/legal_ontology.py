@@ -1,3 +1,4 @@
+# Placeholder for additional schema logic if needed in the future.
 from pydantic import BaseModel
 
 

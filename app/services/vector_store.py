@@ -1,3 +1,4 @@
+# Placeholder for vector DB logic if needed in the future.
 
 
 import logging
@@ -9,4 +10,3 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 import json
 from datetime import datetime
-

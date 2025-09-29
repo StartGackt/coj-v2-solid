@@ -1,3 +1,4 @@
+# Placeholder for additional app logic if needed in the future.
 def main():
     import uvicorn
     from fastapi import FastAPI
