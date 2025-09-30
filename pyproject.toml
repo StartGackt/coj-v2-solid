@@ -26,4 +26,5 @@ dependencies = [
     "langchain-community>=0.0.10",
     "spacy>=3.7.0",
     "transformers>=4.0.0",
+    "alembic>=1.16.5",
 ]

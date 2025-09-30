@@ -20,3 +20,7 @@ def list_legal_ontologies(db: Session = Depends(get_db)):
 def create_legal_ontology(obj_in: LegalOntologyCreate, db: Session = Depends(get_db)):
     service = LegalOntologyService(LegalOntologyRepository(db))
     return service.create(obj_in)
+
+@router.get("/health")
+def health_check():
+    return {"status": "ok"}
