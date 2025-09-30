@@ -27,4 +27,10 @@ dependencies = [
     "spacy>=3.7.0",
     "transformers>=4.0.0",
     "alembic>=1.16.5",
+    "datasets>=2.0.0",
+    "pytest>=8.0.0",
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*", "models*", "alembic*"]
