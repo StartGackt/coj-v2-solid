@@ -8,9 +8,13 @@ from app.services.legal_article.analyzer import (
     HeuristicLegalArticleAnalyzer,
 )
 from app.services.legal_article.service import LegalArticleAnalysisService
+from app.services.knowledge_graph import KnowledgeGraphService
 
 
-def build_legal_article_analysis_service() -> LegalArticleAnalysisService:
+def build_legal_article_analysis_service(
+    *,
+    knowledge_graph_service: KnowledgeGraphService | None = None,
+) -> LegalArticleAnalysisService:
     repository = get_default_legal_article_repository()
     analyzer = HeuristicLegalArticleAnalyzer(
         summary_rules=[
@@ -28,4 +32,8 @@ def build_legal_article_analysis_service() -> LegalArticleAnalysisService:
             ),
         ]
     )
-    return LegalArticleAnalysisService(repository=repository, analyzer=analyzer)
+    return LegalArticleAnalysisService(
+        repository=repository,
+        analyzer=analyzer,
+        knowledge_graph=knowledge_graph_service,
+    )
